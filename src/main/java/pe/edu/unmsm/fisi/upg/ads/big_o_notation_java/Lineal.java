@@ -5,7 +5,7 @@ import java.util.List;
 
 //Complexity: O(N)
 public class Lineal {
-	private final static int N = 90;
+	private final static int N = 20;
 	
 	public Lineal() {
 	}
