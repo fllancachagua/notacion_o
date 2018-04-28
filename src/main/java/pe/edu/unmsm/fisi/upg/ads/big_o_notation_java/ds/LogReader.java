@@ -2,6 +2,7 @@ package pe.edu.unmsm.fisi.upg.ads.big_o_notation_java.ds;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 
 public class LogReader implements Iterable<LogLine> {

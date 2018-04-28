@@ -24,8 +24,8 @@ public class DataStructures {
         
         System.out.println("\nProcessing unique IPs... Mejorado");
         stopwatch = Stopwatch.createStarted();
-        int sizeUniqueIps = logReader.getSizeUniqueIpsv2();
-        System.out.println(String.format("Number of unique IPs: %d", sizeUniqueIps));
+        int sizeUniqueIpsv2 = logReader.getSizeUniqueIpsv2();
+        System.out.println(String.format("Number of unique IPs: %d", sizeUniqueIpsv2));
         System.out.println(String.format("Time elapsed: %d seconds", stopwatch.elapsed(TimeUnit.SECONDS)));        
     }
 }
