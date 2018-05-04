@@ -14,7 +14,7 @@ public class LogReader implements Iterable<LogLine> {
     public LogReader(int sizeLogLines, int sizeUniqueIps) {
         this.sizeLogLines = sizeLogLines;
         this.sizeUniqueIps = sizeUniqueIps;
-       // this.uniqueIps = new ArrayList<String>();
+        this.uniqueIps = new ArrayList<String>();
         this.uniqueIpsV2 = new HashMap<String,String>();
     }
 

@@ -17,15 +17,15 @@ public class DataStructures {
         System.out.println(String.format("Time elapsed: %d milliseconds", stopwatch.elapsed(TimeUnit.MILLISECONDS)));
 
         System.out.println("\nProcessing unique IPs...");
-        stopwatch = Stopwatch.createStarted();
+        Stopwatch stopwatchUI = Stopwatch.createStarted();
         int sizeUniqueIps = logReader.getSizeUniqueIps();
-        System.out.println(String.format("Number of unique IPs: %d", sizeUniqueIps));
-        System.out.println(String.format("Time elapsed: %d seconds", stopwatch.elapsed(TimeUnit.SECONDS)));
+        System.out.println(String.format("Number of unique IPs O(N^2): %d", sizeUniqueIps));
+        System.out.println(String.format("Time elapsed: %d milliseconds", stopwatchUI.elapsed(TimeUnit.MILLISECONDS)));
         
         System.out.println("\nProcessing unique IPs... Mejorado");
-        stopwatch = Stopwatch.createStarted();
+        Stopwatch stopwatchUIv2 = Stopwatch.createStarted();
         int sizeUniqueIpsv2 = logReader.getSizeUniqueIpsv2();
-        System.out.println(String.format("Number of unique IPs: %d", sizeUniqueIpsv2));
-        System.out.println(String.format("Time elapsed: %d seconds", stopwatch.elapsed(TimeUnit.SECONDS)));        
+        System.out.println(String.format("Number of unique IPs O(N): %d", sizeUniqueIpsv2));
+        System.out.println(String.format("Time elapsed: %d milliseconds", stopwatchUIv2.elapsed(TimeUnit.MILLISECONDS)));        
     }
 }
